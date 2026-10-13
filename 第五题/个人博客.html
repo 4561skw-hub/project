@@ -257,6 +257,9 @@
           background: #4a7fd4;
           color: white;
           border: none;
+          font-family: inherit;
+          font-size: 1rem;
+          letter-spacing: 0.03em;
           border-radius: 24px;
           padding: 0.8rem 1.2rem;
           box-shadow: 0 4px 12px rgba(48, 56, 69, 0.1);
@@ -348,13 +351,13 @@
         <p>邮箱 1207606488@qq.com</p>
       </div>
     </footer>
-  <button>
-    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-      回到顶部
-    </div>
-  </button>
+  <button class="back-to-top" id="back-to-top">回到顶部</button>
 
   <script>
+    document.querySelector("#back-to-top").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
     const slides = document.querySelectorAll(".slides .slide");
     let currentSlide = 0;
     setInterval(() => {

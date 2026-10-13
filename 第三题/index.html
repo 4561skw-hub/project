@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
   <head>
+  <meta charset="UTF-8">
+  <title>微光方块展示墙</title>
   <style>
     .box{
       width: 50px;
@@ -9,26 +12,19 @@
                   0 0 14px rgba(163, 197, 255, .32);
                   border-radius: 10px;
     }
-    .s1 {
+    .s1, .s2 {
       width: 300px;
       height: 300px;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(5, 1fr);
-    }
-    .s2 {
-      width: 300px;
-      height: 300px;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      border: 2px ;
+      border: 2px solid rgba(42, 43, 51, .78);
+      border-radius: 12px;
     }
     .d1{
       width: 700px;
       height: 300px;
       display:flex;
-      grid-template-columns: repeat(2, 1fr);
       gap: 40px;
 
     }
@@ -162,6 +158,5 @@
     <div class="box"></div>
     </div>
     </div>
-  </body>
   </body>
 </html>
